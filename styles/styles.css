@@ -1,6 +1,12 @@
+:root {
+    --dark-blue: darkblue;
+    --padding-medium: 10px;
+   
+}
+
 nav {
-    background-color: darkblue;
-    padding: 10px;
+    background-color: var(--dark-blue);   
+    padding: var(--padding-medium)    
 }
 
 nav a {
@@ -10,7 +16,7 @@ nav a {
 }
 
 h1 {
-    color: darkblue;
+    color: var(--dark-blue)  
 }
 
 main img {
@@ -22,7 +28,7 @@ main img {
 }
 
 p {
-    padding: 10px;
+    padding: var(--padding-medium) 
 }
 
 
@@ -52,6 +58,6 @@ p {
 
 footer {
     margin-top: 15px;
-    border-top: 1px solid #000000;
+    border-top: 1px solid #0000;
     text-align: center;
 }
