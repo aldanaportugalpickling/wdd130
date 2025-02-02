@@ -1,22 +1,41 @@
 :root {
-    --dark-blue: darkblue;
+    --pink: rgb(244, 134, 152);
     --padding-medium: 10px;
+    --margin-medium: 1rem;
    
 }
 
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-size: 16px;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+
 nav {
-    background-color: var(--dark-blue);   
-    padding: var(--padding-medium)    
+    background-color: var(--pink);   
+    padding: var(--padding-medium);    
 }
 
 nav a {
     color: white;
     display: block;
-    padding: 20px;
+    padding: var(--padding-medium);
 }
 
 h1 {
-    color: var(--dark-blue)  
+    color: var(--pink); 
+    padding: .5rem;
+
+}
+
+main {
+    max-width: 840px;
 }
 
 main img {
@@ -24,40 +43,49 @@ main img {
     height: auto;
     border: 1px solid black;
     padding: 2px;
-    box-shadow: 0 0 30px gray;
+    box-shadow: 0 0 30px rgb(241, 107, 161);
+    float: right;
+    margin: 0 0 var(--margin-medium) var(--margin-medium);
 }
 
 p {
-    padding: var(--padding-medium) 
-}
-
-
-
-main {
-    max-width: 840px;
+    margin: var(--margin-medium);
 }
 
 aside {
     width: 20rem;
-    margin: 1rem;
-    border: 1px solid rgba(0,0,0, 0.2);
-    padding: 1rem;
-    background-color: #8ee5f7;
-    color:#124;
     text-align: center;
+    position: relative;
 }
 
 aside img {
     width: 200px;
     height: auto;
 }
-
-p {
-    padding: 0;
+aside h2 {
+    position: absolute;
+    top: 16px;
+    left: 115px;
 }
 
 footer {
-    margin-top: 15px;
-    border-top: 1px solid #0000;
+    margin-top: 16px;
+    border-top: 1px solid #000;
     text-align: center;
 }
+/* Class Selectors */
+
+.box {
+    margin: var(--margin-medium);
+    border : 1px solid rgb(255, 117, 126);
+    padding: 1rem;
+    background-color: #f7bec6;
+    color: #000;
+    
+ }
+
+ .indent {
+    padding-left: 2rem;
+ }
+
+ 
