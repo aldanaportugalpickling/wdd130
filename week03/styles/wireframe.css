@@ -1,0 +1,18 @@
+:root {
+    --primaty-color: #0FA3B1;
+    --secondary-color: #B5E2FA;
+    --accent1-color: #F9F7F3;
+    --accent2-color: #EDDEA4;
+}
+
+body {
+    background-color: var(--accent1-color);
+    font-family: "Ubuntu", sans-serif;
+    font-weight: 400;
+}
+h1, h2, h3, h4, h5, h6 {
+    font-family: "Ubuntu", sans-serif;
+}
+ p {
+    font-family: "Roboto", serif;
+ }
