@@ -1,0 +1,231 @@
+:root {
+    --primary-color: #0FA3B1;
+    --secondary-color: #B5E2FA;
+    --accent1-color: #FFFFFF;
+    --accent2-color: #EDDEA4;
+    --dark-color: #000;
+}
+
+body {
+    font-family: 'Roboto', sans-serif;
+    background-color: var(--accent1-color);
+    color: var(--dark-color);
+    margin: 0;
+    padding: 0;
+}
+
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px;
+    background-color: var(--primary-color);
+    font-size: 120%;
+}
+
+header .logo-box img {
+    max-height: 100px;
+}
+
+nav a {
+    font-family: 'Roboto', sans-serif;
+    color: var(--accent1-color);
+    margin: 0 15px;
+    text-decoration: none;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 5.0);
+}
+
+nav a:hover {
+    color: var(--secondary-color);
+}
+
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 20px;
+}
+
+.hero {
+    position: relative;
+    height: 77vh;
+    width: 100%;
+    overflow: hidden;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.hero img {
+    display: block;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    position:absolute;
+    top: 0;
+    left: 0;
+    filter: brightness(50%);
+}
+
+.hero h1 {
+    position: absolute;
+    top: 10%;
+    left: 50%;
+    transform: translateX(-50%);
+    color: var(--accent1-color);
+    padding: 10px 20px;
+    border-radius: 5px;
+    font-size: 4rem;
+    text-align: center;
+    white-space: nowrap;
+    font-family: 'Ubuntu', sans-serif;
+}
+
+.hero article {
+    position: absolute;
+    bottom: 10%;
+    left: 50%;
+    transform: translateX(-50%);
+    max-width: 700px;
+    background: rgba(42, 39, 39, 0.7);
+    padding: 20px;
+    border-radius: 10px;
+    display: flex;
+    align-items: center;
+    gap: 20px;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+.hero article img {
+    width:150px;
+    float: right;
+    height: auto;
+    border-radius: 10px;
+    flex-shrink: 0;
+}
+
+.hero article p {
+    font-size: 1.2rem;
+    line-height: 1.6;
+    color: var(--accent1-color);
+    text-align: left;
+    flex: 1;
+    word-wrap: break-word;
+}
+
+
+.section {
+    padding: 40px 20px;
+    background-color: var(--accent1-color);
+    border-top: 1px solid var(--secondary-color);
+    border-bottom: 1px solid var(--secondary-color);
+    text-align: center;
+}
+
+.history, .adventure {
+    text-align: center;
+    margin: 20px 0;
+}
+
+.history h2, .adventure h2 {
+    font-family: 'Ubuntu', sans-serif;
+    color: var(--primary-color);
+    text-align: center;
+    margin-bottom: 20px;
+    font-size: 2rem;
+    text-transform: uppercase;
+    border-bottom: 2px solid var(--primary-color);
+    padding-bottom: 5px;
+}
+
+.history p, .adventure p {
+    font-family: 'Roboto', sans-serif;
+    color: var(--dark-color);
+    text-align: center;
+    margin: 0;
+}
+
+.adventure img {
+    width: 350px;
+    height: auto;
+    border-radius: 10px;
+    margin: 10px auto;
+    display: block;
+}
+
+/* centrar el contenido de History */
+.history {
+    text-align: center;
+    margin: 20px 0;
+}
+
+.history h2, .adventure h2 {
+    font-family: 'Ubuntu', sans-serif;
+    color: var(--primary-color);
+    text-align: center;
+    margin-bottom: 20px;
+    font-size: 2rem;
+    text-transform: uppercase;
+    border-bottom: 2px solid var(--primary-color);
+    padding-bottom: 5px;
+}
+
+.history p {
+    font-family: 'Roboto', sans-serif;
+    color: var(--dark-color);
+    text-align: center;
+    margin: 0;
+}
+/* Estilos para las imágenes de la sección "Aventura te espera" */
+
+section:nth-of-type(2) {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    align-items: center;
+    gap: 10px;
+}
+
+section:nth-of-type(2) img {
+    width: 350px;
+    height: auto;
+    border-radius: 10px;
+}
+
+/* Centrar el pie de página */
+footer {
+    background-color: var(--primary-color);
+    padding: 20px;
+    color: var(--accent1-color);
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+footer p {
+    font-family: 'Roboto', sans-serif;
+    margin: 10px 0;
+}
+
+.sociallinks {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 10px;
+}
+
+.sociallinks a {
+    margin: 0 10px;
+    text-decoration: none;
+}
+
+.sociallinks img {
+    width: 40px;
+    height: auto;
+}
+
+a.sociallink:hover img {
+    filter: brightness(1.2);
+}
