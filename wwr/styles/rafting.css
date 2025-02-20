@@ -1,3 +1,4 @@
+/* RESET */
 * {
     margin: 0;
     padding: 0;
@@ -18,13 +19,13 @@
 }
 
 body {
-    font-family: var(--paragraph-font); 
-}    
-    
-h1, h2{
+    font-family: var(--paragraph-font);
+}
+
+h1, h2 {
     font-family: var(--heading-font);
     color: var(--primary-color);
-    font-size: 2.0rem;
+    font-size: 2rem;
     margin: 10px;
 }
 
@@ -35,6 +36,7 @@ h3 {
     margin: 10px;
 }
 
+/* HEADER & NAVIGATION */
 header {
     padding: 15px;
     background-color: var(--accent2-color);
@@ -44,7 +46,7 @@ header {
     justify-items: center;
 }
 
-header img{
+header img {
     width: 120px;
     height: auto;
     justify-self: end;
@@ -56,7 +58,7 @@ nav {
     display: flex;
 }
 
-nav a{
+nav a {
     display: block;
     color: var(--nav-link-color);
     text-decoration: none;
@@ -64,86 +66,72 @@ nav a{
     border: 1px solid var(--primary-color);
 }
 
-nav a:link, nav a:visited {
-    color: var(--nav-link-color);
-}
-  
 nav a:hover {
     color: var(--nav-hover-link-color);
     background-color: var(--nav-hover-background-color);
 }
 
+/* HERO SECTION */
 .hero {
     position: relative;
     display: flex;
     justify-content: center;
 }
-    
+
 .hero img {
-    display: block;
     width: 100%;
     height: auto;
 }
 
-.hero h1{ 
+.hero h1 {
     position: absolute;
-    display: block;
-    top: 3rem;
-    text-shadow: 2px 2px 2px black;
     font-size: 3rem;
     color: whitesmoke;
-    text-align: center;
-    padding: 10px;
-    width: 920px;
+    text-shadow: 2px 2px 2px black;
 }
 
-.hero div {
-    position: absolute;
-    display: block;
-    top: 8rem;
-    background-color: rgba(153, 151, 151, 0.6);
-    padding: 10px;
-    width: 850px;
-    height: auto;
-}
-
-.hero div img {
-    float: right;
-    width: 200px;
-    height: auto;
-}
-
-.hero div p {
-    font-weight: bold;
-    padding: 10px;
-    border-radius: 5px;
-}
-
+/* HISTORY SECTION */
 .history-section {
     display: grid;
     grid-template-columns: 1fr 1fr;
-    grid-template-rows: 50px 1fr;
-    gap: 10px;
-    justify-items: center;
     background-color: var(--accent1-color);
-    padding: 12px; 
-    border: 1px solid var(--secondary-color)
+    padding: 12px;
 }
 
-.history-section h2 {
-    grid-column: 1/3;
-    grid-row: 1/2;
-    border-bottom: 1px solid var(--primary-color)
+/* ADVENTURES SECTION */
+.adventures-section {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 20px;
+    padding: 1rem;
+    background-color: var(--accent1-color);
 }
 
-.history-section p {
-    grid-row: 2/3;
-    grid-column: 1/3;
-    column-count: 2;
+/* FOOTER */
+footer {
+    display: flex;
+    background-color: var(--nav-background-color);
+    padding: 10px;
+    align-items: center;
+    justify-content: space-around;
+}
+
+/* CONTACT SECTION */
+.info-and-profile {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+}
+
+.employee-profile {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
 }
 
 /* RESPONSIVE DESIGN */
-@media screen and (max-width: 768px) {
+
+/* 📱 Para celulares */
+@media screen and (max-width: 600px) {
     header {
         grid-template-columns: 1fr;
         text-align: center;
@@ -151,24 +139,16 @@ nav a:hover {
 
     nav {
         flex-direction: column;
-        text-align: center;
+        align-items: center;
     }
 
     .hero h1 {
         font-size: 2rem;
-        width: 100%;
-    }
-
-    .hero div {
         width: 90%;
     }
 
     .history-section {
         grid-template-columns: 1fr;
-    }
-
-    .history-section p {
-        column-count: 1;
     }
 
     .info-and-profile {
@@ -177,23 +157,21 @@ nav a:hover {
 
     .employee-profile {
         grid-template-columns: 1fr;
-        text-align: center;
-    }
-
-    .packages {
-        grid-template-columns: 1fr;
-    }
-
-    .description {
-        grid-template-columns: 1fr;
-    }
-
-    .description img {
-        width: 100%;
-        height: auto;
-    }
-
-    .content-grid {
-        grid-template-columns: 1fr;
     }
 }
+
+/* 📟 Para tablets */
+@media screen and (max-width: 1024px) {
+    .hero h1 {
+        font-size: 2.5rem;
+    }
+
+    .history-section {
+        grid-template-columns: 1fr;
+    }
+
+    .employee-profile {
+        grid-template-columns: 1fr 1fr;
+    }
+}
+
