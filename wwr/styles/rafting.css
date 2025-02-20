@@ -4,6 +4,106 @@
     box-sizing: border-box;
 }
 
+@media screen and (max-width: 768px) {
+    /* Ajustar el header para que los elementos se apilen */
+    header {
+        grid-template-columns: 1fr;
+        text-align: center;
+        padding: 10px;
+    }
+
+    header img {
+        justify-self: center;
+        width: 80px;
+    }
+
+    /* Hacer que la navegación sea más compacta */
+    nav {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    nav a {
+        padding: 10px;
+        font-size: 1rem;
+        border: none;
+    }
+
+    /* Ajustar la sección Hero para evitar que el texto se salga */
+    .hero h1 {
+        font-size: 1.8rem;
+        width: 90%;
+        top: 1.5rem;
+    }
+
+    .hero div {
+        width: 90%;
+        top: 5rem;
+        padding: 5px;
+        text-align: center;
+    }
+
+    .hero div img {
+        float: none;
+        display: block;
+        margin: 0 auto;
+        width: 80%;
+    }
+
+    /* Historia: Cambiar a una sola columna */
+    .history-section {
+        grid-template-columns: 1fr;
+        text-align: center;
+    }
+
+    .history-section p {
+        column-count: 1;
+    }
+
+    /* Ajustar la sección de aventuras */
+    .adventures-section {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .adventures-section img {
+        width: 90%;
+    }
+
+    /* Ajustar la sección de empleados */
+    .employee-profile {
+        grid-template-columns: 1fr;
+        text-align: center;
+    }
+
+    .employee-profile figure {
+        margin-bottom: 10px;
+    }
+
+    /* Ajustar el formulario de contacto */
+    .contact-form {
+        width: 90%;
+        margin: auto;
+    }
+
+    input, textarea {
+        width: 100%;
+    }
+
+    /* Ajustar el footer */
+    footer {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    footer a {
+        margin-top: 5px;
+    }
+}
+
+
+
+
 :root {
 
     --heading-font: 'Ubuntu', serif;
