@@ -26,6 +26,7 @@ body {
    
 }    
     
+
 h1, h2{
     font-family: var(--heading-font);
     color: var(--primary-color);
@@ -112,6 +113,7 @@ nav a:hover {
     width: 850px;
     height: auto;
 }
+
 
 .hero div img {
     float: right;
@@ -200,19 +202,19 @@ footer a {
 }
 
 footer a img {
-    width: 30px;
+    width: 40px;
     height: auto;
 }
 
 /* Contact Style */
 
 #contact-heading {
-    display: flex;
+    display: block;
     text-align: center;
     align-items: center;
     margin: 0.5rem 0;
     padding: 10px;
-    width: 920px;
+    width: 100%;
     border-top: 1px solid var(--secondary-color);
     border-bottom: 1px solid var(--secondary-color);
 }
@@ -375,33 +377,39 @@ button:hover {
 #book h2{
     position: absolute;
     display: block;
-    top: 2rem;
+    top: 3rem;
     text-align: center;
-    background-color: rgba(239, 239, 239, 0.8);
+    color: whitesmoke;
+    font-size: 3rem;
+    text-shadow: 2px 2px 2px black;
     padding: 10px;
     width: 920px; 
 }
 
 #book p{
     position: absolute;
+    font-weight: bold;
+    font-size: 20px;
     display: block;
-    top: 8rem;
+    top: 10rem;
     text-align: center;
     background-color: rgba(71, 169, 255, 0.8);
-    padding: 10px;
+    padding: 15px;
     width: 780px; 
-    height: 18%;
+    height: 10%;
 }
 
 #book a{
     position: absolute;
     display: block;
-    top: 25rem;
+    font-size: 1.5rem;
+    top: 20rem;
     text-align: center;
     background-color: var(--nav-background-color);
+    border-radius: 15px;
     padding: 10px;
     width: 200px; 
-    height: 10%;
+    height: 50px;
     text-decoration: none;
     color: var(--primary-color);
     font-weight: bold;
