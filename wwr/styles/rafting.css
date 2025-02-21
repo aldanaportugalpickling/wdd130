@@ -377,7 +377,7 @@ button:hover {
     display: block;
     top: 2rem;
     text-align: center;
-    background-color: rgb(71, 169,255,0.8);
+    background-color: rgba(239, 239, 239, 0.8);
     padding: 10px;
     width: 920px; 
 }
