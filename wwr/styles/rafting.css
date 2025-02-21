@@ -108,7 +108,7 @@ nav a:hover {
     position: absolute;
     display: block;
     top: 8rem;
-    background-color: rgba(153, 151, 151, 0.6);
+    background-color: rgba(112, 176, 231, 0.8);
     padding: 10px;
     width: 850px;
     height: auto;
@@ -524,9 +524,11 @@ tbody tr:nth-child(even) td {
 
 #h1-heading {
     position: absolute;
-    background-color: rgb(71, 169,255,0.8);
+    font-size: 3rem;
+    color: whitesmoke;
+    text-shadow: 2px 2px 2px black;
     padding: 10px;
-    top: 2rem;
+    top: 3rem;
     width: 100%;
     text-align: center;
 }
