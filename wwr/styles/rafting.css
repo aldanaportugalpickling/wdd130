@@ -445,8 +445,8 @@ button:hover {
 }
 
 .description img {
-    width: 200px;
-    height: 290px;
+    width: 300px;
+    height: auto;
     border: 2px solid var(--secondary-color);
     grid-column: 1/2;
     grid-row: 2/6;
